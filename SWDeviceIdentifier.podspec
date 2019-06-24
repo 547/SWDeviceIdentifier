@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "SWDeviceIdentifier"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of SWDeviceIdentifier."
+  spec.summary      = "利用keychain来保存UUID，确保UUID的相对唯一性."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+利用keychain来保存UUID，确保UUID的相对唯一性，如果用userdefault保存，APP卸载重装UUID会变得，利用bundle identifier 和keychain就不会出现卸载重装UUID改变了。
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/SWDeviceIdentifier"
+  spec.homepage     = "https://github.com/547/SWDeviceIdentifier"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,8 +53,8 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Seven Wang" => "seven.wang@supernovachina.com" }
-  # Or just: spec.author    = "Seven Wang"
+  # spec.author             = { "Seven Wang" => "seven.wang@supernovachina.com" }
+  spec.author    = "Seven Wang"
   # spec.authors            = { "Seven Wang" => "seven.wang@supernovachina.com" }
   # spec.social_media_url   = "https://twitter.com/Seven Wang"
 
@@ -64,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/SWDeviceIdentifier.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/547/SWDeviceIdentifier.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +91,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "SWDeviceIdentifier", "SWDeviceIdentifier/**/*.{h,m,swift}"
+  # spec.exclude_files = "SWDeviceIdentifier/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  # spec.public_header_files = "SWDeviceIdentifier/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,8 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
+  spec.frameworks = "Foundation"
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
@@ -132,6 +132,8 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  # spec.dependency "KeychainAccess", "~> 3.2.0"
+
+  spec.swift_version = "5.0"
 
 end

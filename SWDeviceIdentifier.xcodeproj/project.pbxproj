@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3CDF9EC43D599F2BA192170 /* Pods_SWDeviceIdentifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B9EA655FE31E1E847ED554 /* Pods_SWDeviceIdentifier.framework */; };
 		E618562022C07C8C00ED56D8 /* SWDeviceIdentifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E618561622C07C8C00ED56D8 /* SWDeviceIdentifier.framework */; };
 		E618562522C07C8C00ED56D8 /* SWDeviceIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618562422C07C8C00ED56D8 /* SWDeviceIdentifierTests.swift */; };
 		E618562722C07C8C00ED56D8 /* SWDeviceIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = E618561922C07C8C00ED56D8 /* SWDeviceIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E618563122C080B500ED56D8 /* SWDeviceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618563022C080B500ED56D8 /* SWDeviceIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FFFEA8F0668D58B3460C779 /* Pods-SWDeviceIdentifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWDeviceIdentifier.debug.xcconfig"; path = "Target Support Files/Pods-SWDeviceIdentifier/Pods-SWDeviceIdentifier.debug.xcconfig"; sourceTree = "<group>"; };
+		41B9EA655FE31E1E847ED554 /* Pods_SWDeviceIdentifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWDeviceIdentifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B521EFAF66982E5A5992D964 /* Pods-SWDeviceIdentifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWDeviceIdentifier.release.xcconfig"; path = "Target Support Files/Pods-SWDeviceIdentifier/Pods-SWDeviceIdentifier.release.xcconfig"; sourceTree = "<group>"; };
 		E618561622C07C8C00ED56D8 /* SWDeviceIdentifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWDeviceIdentifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618561922C07C8C00ED56D8 /* SWDeviceIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWDeviceIdentifier.h; sourceTree = "<group>"; };
 		E618561A22C07C8C00ED56D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E618561F22C07C8C00ED56D8 /* SWDeviceIdentifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWDeviceIdentifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618562422C07C8C00ED56D8 /* SWDeviceIdentifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDeviceIdentifierTests.swift; sourceTree = "<group>"; };
 		E618562622C07C8C00ED56D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E618563022C080B500ED56D8 /* SWDeviceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDeviceIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CDF9EC43D599F2BA192170 /* Pods_SWDeviceIdentifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89EFFB98597C87A464D789A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FFFEA8F0668D58B3460C779 /* Pods-SWDeviceIdentifier.debug.xcconfig */,
+				B521EFAF66982E5A5992D964 /* Pods-SWDeviceIdentifier.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE2F5CB9E29CB4055A85190D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B9EA655FE31E1E847ED554 /* Pods_SWDeviceIdentifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E618560C22C07C8C00ED56D8 = {
 			isa = PBXGroup;
 			children = (
 				E618561822C07C8C00ED56D8 /* SWDeviceIdentifier */,
 				E618562322C07C8C00ED56D8 /* SWDeviceIdentifierTests */,
 				E618561722C07C8C00ED56D8 /* Products */,
+				89EFFB98597C87A464D789A4 /* Pods */,
+				BE2F5CB9E29CB4055A85190D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +99,7 @@
 			children = (
 				E618561922C07C8C00ED56D8 /* SWDeviceIdentifier.h */,
 				E618561A22C07C8C00ED56D8 /* Info.plist */,
+				E618563022C080B500ED56D8 /* SWDeviceIdentifier.swift */,
 			);
 			path = SWDeviceIdentifier;
 			sourceTree = "<group>";
@@ -104,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E618562A22C07C8C00ED56D8 /* Build configuration list for PBXNativeTarget "SWDeviceIdentifier" */;
 			buildPhases = (
+				50C502D37DEB8C14A69C180E /* [CP] Check Pods Manifest.lock */,
 				E618561122C07C8C00ED56D8 /* Headers */,
 				E618561222C07C8C00ED56D8 /* Sources */,
 				E618561322C07C8C00ED56D8 /* Frameworks */,
@@ -148,6 +176,7 @@
 				TargetAttributes = {
 					E618561522C07C8C00ED56D8 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					E618561E22C07C8C00ED56D8 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -189,11 +218,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50C502D37DEB8C14A69C180E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWDeviceIdentifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E618561222C07C8C00ED56D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E618563122C080B500ED56D8 /* SWDeviceIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +395,9 @@
 		};
 		E618562B22C07C8C00ED56D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FFFEA8F0668D58B3460C779 /* Pods-SWDeviceIdentifier.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -359,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Seven.SWDeviceIdentifier;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,7 +424,9 @@
 		};
 		E618562C22C07C8C00ED56D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B521EFAF66982E5A5992D964 /* Pods-SWDeviceIdentifier.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +453,7 @@
 		E618562E22C07C8C00ED56D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTWT2P766B;
 				INFOPLIST_FILE = SWDeviceIdentifierTests/Info.plist;
@@ -411,6 +472,7 @@
 		E618562F22C07C8C00ED56D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTWT2P766B;
 				INFOPLIST_FILE = SWDeviceIdentifierTests/Info.plist;
